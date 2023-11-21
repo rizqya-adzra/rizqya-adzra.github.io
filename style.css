@@ -114,6 +114,40 @@ nav ul li a:hover {
     box-shadow: 1px 1px 30px 1px  #FB2576;
     transition: 0.3s ease-out; 
 }
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 15px;
+    }
+
+    nav ul li:hover {
+        padding: 2px;
+
+    }
+
+    nav ul li a {
+        font-size: 10px;
+        text-align: center;
+        opacity: 0;
+    }
+
+    .btn-judul {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .para1 {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+   .container {
+    font-size: 10px;
+    padding: 20px;
+    padding-top: 150px;
+   }
+}
+
 /* Home */
 
 /* About Me */
@@ -151,9 +185,8 @@ nav ul li a:hover {
 
 .item1 h1 {
     display: flex;
-    word-spacing: 5px;
     color: white;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .item1 p {
@@ -252,29 +285,72 @@ nav ul li a:hover {
 .layer:hover p {
     opacity: 1;
 }
+
+@media (max-width: 600px) {
+    .head-abt {
+        margin: 0px;
+        margin-top: 15px;
+        font-size: 60px;
+        padding: 0px;
+        text-align: center;
+        border: none;
+    }
+
+    .abt-container {
+        flex-direction: column;
+    }  
+
+    .item1 p {
+        margin-right: 0px;
+        padding-top: 20px;
+    }
+
+    .item1 h1 {
+        display: inline-block;
+        text-align: center;
+
+    }
+
+    .head2-abt {
+        opacity: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .abt-item {
+        padding: 20px;
+    }
+
+    .abt2-item {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .layer h3 {
+        opacity: 1;
+    }
+
+    .layer p {
+        opacity: 1;
+    }
+}
 /* About Me */
 
 /* Offer */
-.offer {
-    background: rgb(11,2,87);
-    background: radial-gradient(circle, rgba(11,2,87,1) 50%, rgba(133,21,63,1) 100%);
-}
-
 .offer-item {
-    background-color: white;
-    border-radius: 150px 0px 150px 0px;
+    border: 2px solid #FB2576;
+    margin: 20px;
+    border-radius: 80px 200px 80px 200px;
 }
 
 .offer-item h1 {
-    color: black;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
     font-size: 40px;
 }
 
 .offer-item p {
-    color: black;
-    padding-bottom: 50px ;
+    padding-bottom: 80px;
     text-align: center;
 }
 /* Offer */
@@ -282,7 +358,6 @@ nav ul li a:hover {
 /* resume */
 .container-resume {
     background: rgb(11,2,87);
-    background: radial-gradient(circle, rgba(11,2,87,1) 50%, rgba(133,21,63,1) 100%);
     height: 100vh;
     width: 100%;
 }
@@ -334,6 +409,25 @@ nav ul li a:hover {
 .para3 p {
     color: white;
     font-weight: 100;
+}
+
+@media (max-width: 600px) {
+    .resume-item img {
+        width: 200px;
+    }
+
+    .para3 {
+        padding-top: 0px;
+    }
+
+    .para3 h2 {
+        font-size: 10px;
+    }
+
+    .para3 p {
+        font-size: 10px;
+
+    }
 }
 /* resume */
 
@@ -387,6 +481,39 @@ input {
     border-bottom: 1px solid #332FD0;
     outline: none;
     padding-bottom: 5px;
+}
+
+.btn-sub {
+    background-color: transparent;
+    border: 3px solid #FB2576;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.btn-sub:hover {
+    background-color: #FB2576;
+    color: white;
+    box-shadow: 1px 1px 10px 1px #FB2576;
+}
+
+@media (max-width: 600px) {
+    .container-contact {
+        padding: 25px;
+    }
+
+    .contact-left {
+        padding: 40px 80px;
+    }
+
+    .contact-right {
+       padding: 40px 38px;
+    }
+
+    .input-group {
+        flex-grow: 1;
+    }
+
 }
 
 /* footer */
