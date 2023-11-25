@@ -31,26 +31,36 @@ nav {
 }
 
 nav ul {
-    display: block;
+    display: inline-block;
 }
 
 nav ul li {
     display: inline-block;
+    position: relative;
     list-style-type: none;
     padding: 0px 50px 0px 50px;
 }
 
-nav ul li a {
+a {
     background-color: transparent;
     color: white;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: #fb257794;
-    padding: 10px;
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 5px;
     border-radius: 10px;
+    background: #FB2576;
+    display: block;
+    margin: auto;
 }
+
+nav  ul li a:hover::after {
+    width: 100%;
+    transition: 0.3s;
+} 
 
 .btn-nav {
     border: 2px solid #FB2576;
@@ -71,10 +81,9 @@ nav ul li a:hover {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    padding: 180px 900px 10px 180px;
+    padding: 130px 200px 10px 180px;
     color: white;
+    display: flex;
 }
 
 .judul0 {
@@ -115,7 +124,7 @@ nav ul li a:hover {
     transition: 0.3s ease-out; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
     .logo {
         font-size: 15px;
     }
@@ -176,6 +185,7 @@ nav ul li a:hover {
 .abt-item {
     display: flex;
     padding: 50px;
+    margin-top: 30px;
 }
 
 .head-abt1 {
@@ -286,7 +296,46 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-@media (max-width: 600px) {
+.item-box-h2 {
+    color: white;
+    text-align: center;
+}
+
+.ido-box {
+    margin: 30px 200px 0px 200px;
+    background-color: #FB2576;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.ido-box h2 {
+    color: yellow;
+}
+
+.ido-box p {
+    margin: 0px 90px 0px 90px;
+}
+
+.btn-box {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 3px solid #332FD0;
+    background-color: #332FD0;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-box:hover {
+    background-color: transparent;
+    border: 3px solid #f1f1f1;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 900px) {
     .head-abt {
         margin: 0px;
         margin-top: 15px;
@@ -321,9 +370,9 @@ nav ul li a:hover {
         padding: 20px;
     }
 
-    .abt2-item {
-        margin-left: 50px;
-        margin-right: 50px;
+    .about2{
+        align-items: center;
+        margin-bottom: 50px;
     }
 
     .layer h3 {
@@ -333,11 +382,19 @@ nav ul li a:hover {
     .layer p {
         opacity: 1;
     }
+
+    .ido-box {
+        margin: 50px; 
+    }
+
+    .ido-box p {
+        margin: 10px;
+    }
 }
 /* About Me */
 
 /* Offer */
-.offer-item {
+.offer {
     border: 2px solid #FB2576;
     margin: 20px;
     border-radius: 80px 200px 80px 200px;
@@ -357,7 +414,7 @@ nav ul li a:hover {
 
 /* resume */
 .container-resume {
-    background: rgb(11,2,87);
+    background: rgb(133,21,63,1);
     height: 100vh;
     width: 100%;
 }
@@ -382,8 +439,7 @@ nav ul li a:hover {
     border-radius: 20px;
     width: 600px;
     margin: 20px;
-    box-shadow: 5px 5px 0px 0px #FB2576;
-    
+    box-shadow: 5px 5px 0px 0px rgb(255, 154, 154);
 }
 
 .resume-item:hover {
@@ -411,7 +467,7 @@ nav ul li a:hover {
     font-weight: 100;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .resume-item img {
         width: 200px;
     }
@@ -437,7 +493,8 @@ nav ul li a:hover {
 
 .container-contact {
     width: 80%;
-    padding: 50px 0px 70px 300px;
+    padding: 50px 10px 50px 0px;
+    margin-left: 170px;
 }
 
 .container-contact h1 {
@@ -495,25 +552,20 @@ input {
     background-color: #FB2576;
     color: white;
     box-shadow: 1px 1px 10px 1px #FB2576;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .container-contact {
-        padding: 25px;
+        margin-left: 90px;     
     }
+}
 
-    .contact-left {
-        padding: 40px 80px;
+@media (max-width: 500px) {
+    .container-contact {
+        margin-left: 40px;
     }
-
-    .contact-right {
-       padding: 40px 38px;
-    }
-
-    .input-group {
-        flex-grow: 1;
-    }
-
 }
 
 /* footer */
