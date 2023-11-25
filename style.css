@@ -81,7 +81,7 @@ nav  ul li a:hover::after {
 }
 
 .container {
-    padding: 130px 200px 10px 180px;
+    padding: 160px 900px 10px 180px;
     color: white;
     display: flex;
 }
